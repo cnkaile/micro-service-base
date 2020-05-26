@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: micro-service-fiegn-8080
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+# Open Hystrix
+feign:
+  hystrix:
+    enabled: true
+
+############################
+# 和应博核对一下红牛20年红包频次字段内容格式
+# 催跟腾讯技术解决领取红包问题
+############################
+
