@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: micro-service-ribbon-hystrix
+eureka:
+  client:
+    service-url: http://localhost:8761/erueka/
+server:
+  port: 8080

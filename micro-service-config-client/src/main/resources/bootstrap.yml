@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: micro-service-config-client
+  profiles:
+    active: dev
+
+
+---
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9999/
+      label: master
+      profile: dev
+---
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9999/
+      label: master
+      profile: prod
